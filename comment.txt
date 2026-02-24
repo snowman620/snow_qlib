@@ -1,0 +1,22 @@
+1.创建虚拟环境
+pyenv local 3.10.11
+python -m venv .venv
+
+
+2.安装完整的量化依赖
+pip install pyqlib[full]
+# 这会安装：
+# - numpy, pandas
+# - lightgbm, catboost
+# - scikit-learn
+# - torch (可选)
+# - 其他必要依赖
+
+
+3. 测试导入
+>>> import qlib
+>>> print(qlib.__version__)
+# 应该显示版本号，如 0.9.6
+
+>>> from qlib.data import D
+>>> print("QLib 安装成功！")
