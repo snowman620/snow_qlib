@@ -13,10 +13,14 @@ pip install pyqlib[full]
 # - 其他必要依赖
 
 
-3. 测试导入
+3.测试导入
 >>> import qlib
 >>> print(qlib.__version__)
-# 应该显示版本号，如 0.9.6
+# 应该显示版本号，如 0.9.6 / 0.8.6
 
 >>> from qlib.data import D
 >>> print("QLib 安装成功！")
+
+
+4.格式转换
+python scripts/dump_bin.py dump_all --data_path data/raw_csv --qlib_dir data/qlib_data --freq day
